@@ -1,0 +1,54 @@
+/****** FONTS ******/
+
+.kode-mono {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+/*******************************/
+/****** VALEURS DE STYLES ******/
+:root{
+    --font-color: #E9FF00;
+    --background-color: #1e1e1e;
+    --font-family: "Kode Mono", monospace;
+    --font-size: 16px;
+}
+/*******************************/
+
+/****** STYLE GÉNÉRAL ******/
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+
+    padding: 100px 200px;
+}
+
+input, input::selection {
+    background-color: transparent;
+    color: var(--font-color);
+    font-family:var(--font-family);
+    font-size: var(--font-size);
+
+    border: 0;
+    outline: 0;
+
+    width: 75%;
+}
+
+#terminalOutput {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.command {
+    margin-top: 8px;
+}
+
+.file-content {
+    min-height: 1em;
+}
